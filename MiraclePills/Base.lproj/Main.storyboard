@@ -1,26 +1,114 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiraclePills" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="hhk-iP-i5O">
+                                <rect key="frame" x="116" y="28" width="90" height="90"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miracle Pills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbu-pf-i21">
+                                <rect key="frame" x="97" y="126" width="127" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-ru-iHQ">
+                                <rect key="frame" x="122" y="163" width="77" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBa-vu-wVG" userLabel="Divider">
+                                <rect key="frame" x="32" y="195" width="257" height="4"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="6d9-FT-NIH"/>
+                                    <constraint firstAttribute="height" constant="4" id="8ot-zW-Xos"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTI-xG-ytB">
+                                <rect key="frame" x="32" y="207" width="257" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="adx-hF-8gz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S62-zB-4YS" userLabel="Enter_First_Name">
+                                <rect key="frame" x="32" y="236" width="257" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuR-i6-LLy">
+                                <rect key="frame" x="32" y="274" width="257" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ff3-Rq-6t0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVB-eY-y7K" userLabel="Enter_First_Name">
+                                <rect key="frame" x="32" y="303" width="257" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S62-zB-4YS" firstAttribute="leading" secondItem="FTI-xG-ytB" secondAttribute="leading" id="0d0-Wq-iEL"/>
+                            <constraint firstItem="HuR-i6-LLy" firstAttribute="trailing" secondItem="S62-zB-4YS" secondAttribute="trailing" id="1Qm-dq-viR"/>
+                            <constraint firstItem="NsY-ru-iHQ" firstAttribute="centerX" secondItem="qbu-pf-i21" secondAttribute="centerX" id="6h7-XJ-pec"/>
+                            <constraint firstItem="HuR-i6-LLy" firstAttribute="top" secondItem="S62-zB-4YS" secondAttribute="bottom" constant="8" id="Cmg-e8-IOs"/>
+                            <constraint firstItem="FTI-xG-ytB" firstAttribute="top" secondItem="rBa-vu-wVG" secondAttribute="bottom" constant="8" id="QQr-WW-1v6"/>
+                            <constraint firstItem="oVB-eY-y7K" firstAttribute="leading" secondItem="HuR-i6-LLy" secondAttribute="leading" id="QVP-pz-zpA"/>
+                            <constraint firstItem="rBa-vu-wVG" firstAttribute="top" secondItem="NsY-ru-iHQ" secondAttribute="bottom" constant="8" id="YgP-dU-yiI"/>
+                            <constraint firstItem="FTI-xG-ytB" firstAttribute="leading" secondItem="rBa-vu-wVG" secondAttribute="leading" id="ZFq-er-UYo"/>
+                            <constraint firstItem="rBa-vu-wVG" firstAttribute="centerX" secondItem="NsY-ru-iHQ" secondAttribute="centerX" id="bu1-AZ-hRZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rBa-vu-wVG" secondAttribute="trailing" constant="15" id="g2W-oC-FuV"/>
+                            <constraint firstItem="oVB-eY-y7K" firstAttribute="trailing" secondItem="HuR-i6-LLy" secondAttribute="trailing" id="gDt-N8-eaT"/>
+                            <constraint firstItem="hhk-iP-i5O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gV1-MY-cAp"/>
+                            <constraint firstItem="hhk-iP-i5O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="hdT-ct-HSz"/>
+                            <constraint firstItem="S62-zB-4YS" firstAttribute="trailing" secondItem="FTI-xG-ytB" secondAttribute="trailing" id="jFQ-J8-OhN"/>
+                            <constraint firstItem="oVB-eY-y7K" firstAttribute="top" secondItem="HuR-i6-LLy" secondAttribute="bottom" constant="8" id="ldS-2x-LxZ"/>
+                            <constraint firstItem="qbu-pf-i21" firstAttribute="top" secondItem="hhk-iP-i5O" secondAttribute="bottom" constant="8" id="mh8-by-nDu"/>
+                            <constraint firstItem="rBa-vu-wVG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="msi-yq-8AU"/>
+                            <constraint firstItem="FTI-xG-ytB" firstAttribute="trailing" secondItem="rBa-vu-wVG" secondAttribute="trailing" id="qbJ-ia-WuW"/>
+                            <constraint firstItem="S62-zB-4YS" firstAttribute="top" secondItem="FTI-xG-ytB" secondAttribute="bottom" constant="8" id="rmX-YA-Xg8"/>
+                            <constraint firstItem="NsY-ru-iHQ" firstAttribute="top" secondItem="qbu-pf-i21" secondAttribute="bottom" constant="8" id="sE6-jS-E5D"/>
+                            <constraint firstItem="qbu-pf-i21" firstAttribute="centerX" secondItem="hhk-iP-i5O" secondAttribute="centerX" id="uJs-92-UW9"/>
+                            <constraint firstItem="HuR-i6-LLy" firstAttribute="leading" secondItem="S62-zB-4YS" secondAttribute="leading" id="wc6-F8-IEU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="100" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miraclePillEmoji" width="90" height="90"/>
+    </resources>
 </document>
