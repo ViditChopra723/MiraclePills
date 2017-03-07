@@ -14,6 +14,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var statePickerBtn: UIButton!
     
+    @IBOutlet weak var BuyNowBtn: UIButton!
+    
+    @IBOutlet weak var SuccessImage: UIImageView!
     
     let states = ["Alaska", "Arkansas", "Alabama", "California", "Maine", "New York" ]
     
@@ -36,6 +39,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.isHidden = false
     }
 
+    @IBAction func BuyNowPrsd(_ sender: Any) {
+       SuccessImage.isHidden = false
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
@@ -57,7 +63,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
-        
+        statePickerBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
         statePicker.isHidden = true
         
     }
